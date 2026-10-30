@@ -1,0 +1,4 @@
+cache memo: 21110 points | owned sections: 165 | target 75m
+level 0: step 300m | cells 7992 | queried new 0 | subdividing 1800 | total new 0 | 0s
+level 1: step 150m | cells 7200 | queried new 6519 | subdividing 4096 | total new 6519 | 1489s
+DONE refine: 6519 new probes in 1489s | cache now ~27629 points

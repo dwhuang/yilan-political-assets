@@ -1,0 +1,5 @@
+# build_sections.py (Voronoi rasterisation + nearest-probe lookup)
+numpy
+scipy
+# build_xlsx.py (Excel export)
+openpyxl

@@ -1,0 +1,236 @@
+{
+ "hsr": [
+  {
+   "name": "高鐵宜蘭站（規劃）",
+   "lat": 24.7275,
+   "lng": 121.7645,
+   "note": "2026/7 行政院核定。設於宜蘭縣政中心東南側（約縣府南350m），與規劃中的台鐵新宜蘭站共站；預計2036-37通車。位置為示意，非精確站址。"
+  }
+ ],
+ "rail": [
+  {
+   "name": "石城",
+   "lat": 24.9783,
+   "lng": 121.9454,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "大里",
+   "lat": 24.96676,
+   "lng": 121.92252,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "大溪",
+   "lat": 24.93836,
+   "lng": 121.88981,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "龜山",
+   "lat": 24.90507,
+   "lng": 121.86875,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "外澳",
+   "lat": 24.8836,
+   "lng": 121.8455,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "頭城",
+   "lat": 24.85905,
+   "lng": 121.82229,
+   "heritage": false,
+   "major": true
+  },
+  {
+   "name": "頂埔",
+   "lat": 24.844,
+   "lng": 121.809,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "礁溪",
+   "lat": 24.8268,
+   "lng": 121.77549,
+   "heritage": false,
+   "major": true
+  },
+  {
+   "name": "四城",
+   "lat": 24.78686,
+   "lng": 121.7629,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "宜蘭",
+   "lat": 24.75456,
+   "lng": 121.75831,
+   "heritage": false,
+   "major": true
+  },
+  {
+   "name": "二結",
+   "lat": 24.706,
+   "lng": 121.77421,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "中里",
+   "lat": 24.6951,
+   "lng": 121.7752,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "羅東",
+   "lat": 24.67798,
+   "lng": 121.7746,
+   "heritage": false,
+   "major": true
+  },
+  {
+   "name": "天送埤",
+   "lat": 24.66254,
+   "lng": 121.61982,
+   "heritage": true,
+   "major": false
+  },
+  {
+   "name": "冬山",
+   "lat": 24.63682,
+   "lng": 121.79207,
+   "heritage": false,
+   "major": true
+  },
+  {
+   "name": "新馬",
+   "lat": 24.61573,
+   "lng": 121.82268,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "蘇澳新",
+   "lat": 24.60825,
+   "lng": 121.82815,
+   "heritage": false,
+   "major": true
+  },
+  {
+   "name": "蘇澳",
+   "lat": 24.59518,
+   "lng": 121.85145,
+   "heritage": false,
+   "major": true
+  },
+  {
+   "name": "永樂",
+   "lat": 24.56839,
+   "lng": 121.84456,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "東澳",
+   "lat": 24.51778,
+   "lng": 121.83071,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "太平山",
+   "lat": 24.49289,
+   "lng": 121.53509,
+   "heritage": true,
+   "major": false
+  },
+  {
+   "name": "茂興",
+   "lat": 24.47834,
+   "lng": 121.5359,
+   "heritage": true,
+   "major": false
+  },
+  {
+   "name": "南澳",
+   "lat": 24.46308,
+   "lng": 121.80134,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "武塔",
+   "lat": 24.4487,
+   "lng": 121.7759,
+   "heritage": false,
+   "major": false
+  },
+  {
+   "name": "漢本",
+   "lat": 24.3338,
+   "lng": 121.76813,
+   "heritage": false,
+   "major": false
+  }
+ ],
+ "bus": [
+  {
+   "name": "礁溪轉運站",
+   "lat": 24.83114,
+   "lng": 121.7775
+  },
+  {
+   "name": "宜蘭轉運站",
+   "lat": 24.75111,
+   "lng": 121.75907
+  },
+  {
+   "name": "羅東轉運站",
+   "lat": 24.67722,
+   "lng": 121.77886
+  },
+  {
+   "name": "蘇澳轉運站",
+   "lat": 24.5954,
+   "lng": 121.85262
+  },
+  {
+   "name": "南方澳轉運站",
+   "lat": 24.58551,
+   "lng": 121.86457
+  }
+ ],
+ "ramp": [
+  {
+   "name": "頭城交流道",
+   "lat": 24.8306,
+   "lng": 121.7886
+  },
+  {
+   "name": "宜蘭交流道",
+   "lat": 24.7571,
+   "lng": 121.781
+  },
+  {
+   "name": "羅東交流道",
+   "lat": 24.6855,
+   "lng": 121.7936
+  },
+  {
+   "name": "蘇澳交流道",
+   "lat": 24.6244,
+   "lng": 121.8097
+  }
+ ]
+}
