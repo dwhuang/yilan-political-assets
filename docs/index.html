@@ -39,11 +39,26 @@
   .poilbl{font-size:10.5px;font-weight:600;padding:0 4px;background:#ffffffe6;border:1px solid #bbb;border-radius:4px;color:#222;box-shadow:0 1px 2px #0003}
   .poilbl::before{display:none !important}
   body.lblhide .poilbl{display:none !important}
-  @media(max-width:680px){ #panel{display:none} #bar{max-width:94vw} #info{width:94vw} }
+  #mtoggle{display:none}
+  @media(max-width:680px){
+    .leaflet-control-zoom{display:none}                        /* pinch to zoom on phones */
+    #mtoggle{display:flex;gap:6px;align-items:center;position:absolute;top:8px;left:8px;right:8px;z-index:700}
+    #mtoggle .mt-t{flex:1;min-width:0;text-align:right;font-size:12px;font-weight:700;color:#333;background:#ffffffcc;padding:6px 9px;border-radius:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    #mtoggle button{font:inherit;font-size:13px;font-weight:600;padding:6px 13px;border:1px solid #2c3e50;border-radius:8px;background:#2c3e50;color:#fff;box-shadow:0 1px 4px #0003}
+    #mtoggle button.on{background:#1f5fbf;border-color:#1f5fbf}
+    #bar,#panel{top:48px;left:8px;right:8px;width:auto;max-width:none;max-height:70vh;overflow:auto;display:none}
+    #bar.show,#panel.show{display:block}
+    #info{left:8px;right:8px;width:auto;bottom:8px;max-height:52vh}
+    .hint{display:none}
+    #bar h1{display:none} .frow{font-size:13px;gap:7px 10px} .chip{padding:5px 11px}
+    select,input[type=search]{font-size:13px;padding:5px 8px}
+    .leaflet-popup-content{max-width:74vw !important}
+  }
 </style>
 </head>
 <body data-palette="#1f5fbf,#1e9e52,#1a9aad,#c6761a">
 <div id="map"></div>
+<div id="mtoggle"><button data-p="bar">☰ 篩選</button><button data-p="panel">圖例</button><span class="mt-t">宜蘭縣政治人物不動產地圖</span></div>
 
 <div id="bar" class="card">
   <h1>宜蘭縣政治人物不動產地圖</h1>
@@ -155,7 +170,12 @@ function highlight(k,s){
 }
 function closeInfo(){ const el=document.getElementById('info'); if(el) el.style.display='none'; highlightLayer.clearLayers(); }
 let _suppressMapClick=false;
-map.on('click',()=>{ if(!_suppressMapClick) closeInfo(); });   // click empty map -> deselect
+function closeMobilePanels(){ document.querySelectorAll('#mtoggle button').forEach(b=>{ document.getElementById(b.dataset.p).classList.remove('show'); b.classList.remove('on'); }); }
+document.querySelectorAll('#mtoggle button').forEach(b=>b.onclick=()=>{
+  const el=document.getElementById(b.dataset.p), open=!el.classList.contains('show');
+  closeMobilePanels(); if(open){ el.classList.add('show'); b.classList.add('on'); }
+});
+map.on('click',()=>{ if(!_suppressMapClick){ closeInfo(); closeMobilePanels(); } });  // tap empty map -> deselect / close panels
 
 function openPop(k,s){
   _suppressMapClick=true; setTimeout(()=>{_suppressMapClick=false;},0);  // keep this click from deselecting
